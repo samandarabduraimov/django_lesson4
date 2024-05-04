@@ -1,0 +1,16 @@
+<title>Detail</title>
+
+
+
+<body>
+<img src="{{ pilot.image.url }}"/><br>
+Model: {{ product.model }}<br>
+pilotrice: {{ pilot.productrice }}<br>
+Make: {{ pilot.make }}<br>
+CAtegory: {{ pilot.category }}<br>
+Body: {{ pilot.body }}<hr/>
+
+<a href="{% url 'pilot:get_info'%}" >home</a><br>
+<a href="{% url 'pilots:update' pilots.pk %}" >Update</a><br>
+
+</body>

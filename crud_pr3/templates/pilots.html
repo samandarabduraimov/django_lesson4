@@ -1,0 +1,11 @@
+<title>Pilots</title>
+
+<h1>Pilots</h1><br>
+
+
+<body>
+{% for pilot in pilots %}
+    <a href="{% url 'pilots:detail' pilot.pk %}" >{{ pilot.model }}</a><hr>
+{% endfor %}
+
+</body>
